@@ -247,13 +247,7 @@ nav ul {
     resize: none;
 }
 
-/* .btn {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-} */
-
-.btn-contacto {
+.btnContacto{
     font-size: 20px;
     font-family: nyf;
     width: 80px;
@@ -383,6 +377,15 @@ nav ul {
 } */
 
 
+.celularDescargas {
+    background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: nyf;
+    font-size: 30px;
+    padding: 80px;
+}
 
 /* CELULAR VERTICAL */
 @media only screen and (max-width:320px) {
@@ -541,7 +544,7 @@ nav ul {
 
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1200px) {
 
     .resumen {
         flex-direction: row;
@@ -568,7 +571,7 @@ nav ul {
         display: block;
     }
 
-    .contacto-main{
+    .contacto-main {
         padding-bottom: 0px;
     }
 
