@@ -125,7 +125,7 @@ nav ul {
 .logof a {
     font-size: 50px;
     color: #ffff;
-    -webkit-text-stroke: 1px #000000;
+    -webkit-text-stroke: 2px #000000;
 }
 
 
@@ -247,7 +247,7 @@ nav ul {
     resize: none;
 }
 
-.btnContacto{
+.btnContacto {
     font-size: 20px;
     font-family: nyf;
     width: 80px;
@@ -386,6 +386,58 @@ nav ul {
     font-size: 30px;
     padding: 80px;
 }
+
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.secciones div{
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+
+.secciones div:hover {
+    transform: scale(1.05, 1.05);
+    filter: grayscale(0);
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+}
+
+.personajes {
+    background-image: url(../assets/personajes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aldeas {
+    background-image: url(../assets/Aldeas.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tecnicasElementales {
+    background-image: url(../assets/Tecnicas\ elementales.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.secciones div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: nyf;
+    font-size: 50px;
+    color: #ffff;
+    -webkit-text-stroke: 2px #000000;
+}
+
+
+
 
 /* CELULAR VERTICAL */
 @media only screen and (max-width:320px) {
