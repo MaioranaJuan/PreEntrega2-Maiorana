@@ -40,6 +40,9 @@ header {
     background-color: #FF7000;
     font-family: nyf;
     font-size: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 /* .logo{
@@ -48,6 +51,21 @@ header {
 
 nav a {
     color: #000000;
+    background-image: linear-gradient(#000000, #000000);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+    
+}
+
+nav a:hover {
+    background-image: linear-gradient(#000000, #000000);
+    background-size: 100% 2px;
+}
+
+nav img{
+    height: 15px;
 }
 
 nav {
@@ -237,6 +255,7 @@ nav ul {
 }
 
 .casilla {
+    color: #fff;
     font-family: cards;
     display: flex;
     flex-direction: column;
@@ -324,59 +343,6 @@ nav ul {
     border-radius: 8px;
 }
 
-
-/* JUEGO 2 */
-
-/* .game2 {
-    background-color: #191919;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-        'area1 area6 area6'
-        'area1 area3 area4'
-        'area2 area5 area5'
-        '.. area7 ..';
-    gap: 20px;
-}
-
-.g2-f1 {
-    grid-area: area1;
-}
-
-.g2-f2 {
-    grid-area: area2;
-}
-
-.g2-f3 {
-    grid-area: area3;
-}
-
-.g2-f4 {
-    grid-area: area4;
-}
-
-.g2-f5 {
-    grid-area: area5;
-}
-
-.g2-f6 {
-    grid-area: area6;
-    color: #ffffff;
-}
-
-.g2-fotos img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.g2-btnarea{
-    grid-area: area7;
-} */
-
-
 .celularDescargas {
     background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
     background-size: cover;
@@ -403,6 +369,16 @@ nav ul {
     filter: grayscale(0);
 }
 
+.secciones div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: nyf;
+    font-size: 50px;
+    color: #ffff;
+    -webkit-text-stroke: 2px #000000;
+}
+
 .section {
     width: 100%;
     height: 500px;
@@ -426,21 +402,11 @@ nav ul {
     background-size: cover;
 }
 
-.secciones div p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: nyf;
-    font-size: 50px;
-    color: #ffff;
-    -webkit-text-stroke: 2px #000000;
-}
-
 
 
 
 /* CELULAR VERTICAL */
-@media only screen and (max-width:320px) {
+@media only screen and (min-width:320px) {
 
     /* INDEX */
     .header {
@@ -505,6 +471,15 @@ nav ul {
 
     .celularDescargas {
         display: flex;
+    }
+
+    .secciones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section{
+        height: 150px;
     }
 
 }
@@ -578,7 +553,6 @@ nav ul {
 }
 
 
-
 /* TABLET VERTICAL */
 @media only screen and (min-width:768px) {
 
@@ -594,8 +568,35 @@ nav ul {
         padding-bottom: 300px;
     }
 
+        /* FOOTER */
+        .redes {
+            width: 30%;
+        }
+    
+        .redes1 {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .logof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+        }
+    
+        .logof h2 {
+            font-size: 40px;
+        }
+    
+        .footnav {
+            width: 30%;
+            padding-right: 0px;
+        }
+
 }
 
+/* TABLET HORIZONTAL */
 @media only screen and (min-width:1200px) {
 
     .resumen {
