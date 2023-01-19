@@ -207,6 +207,18 @@ nav ul {
     width: 100%;
 }
 
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+
+.card img:hover {
+    transform: scale(1.10, 1.10);
+    filter: grayscale(0);
+}
+
 .titulo {
     width: 250px;
     font-family: nyf;
@@ -653,16 +665,17 @@ nav ul {
 
 /* Aldeas */
 
-.row{
+.row {
     margin: 0;
 }
 
-.fs-4{
-    margin-top: 40px;
-}
-
-.grande img{
+.grande img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
+.carouselTamaño img{
+    object-fit: contain;
+    height: 400px;
+    }
