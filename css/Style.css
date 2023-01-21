@@ -18,6 +18,12 @@
     src: url(../assets/Font/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
 }
 
+/* tipografia subtitulos */
+.subtitulos {
+    font-family: subtitulo;
+    font-size: 30px;
+}
+
 /* reset de estilos */
 * {
     margin: 0;
@@ -45,10 +51,6 @@ header {
     z-index: 2;
 }
 
-/* .logo{
-    background-image: url(../assets/Vertical-Line-PNG-Photos.png); 
-}  */
-
 nav a {
     color: #000000;
     background-image: linear-gradient(#000000, #000000);
@@ -61,7 +63,7 @@ nav a {
 
 nav a:hover {
     background-image: linear-gradient(#000000, #000000);
-    background-size: 100% 2px;
+    background-size: 90% 2px;
 }
 
 nav img {
@@ -77,12 +79,6 @@ nav {
 nav ul {
     display: flex;
     gap: 25px;
-}
-
-/* tipografia subtitulos */
-.subtitulos {
-    font-family: subtitulo;
-    font-size: 30px;
 }
 
 /* Footer */
@@ -148,14 +144,6 @@ nav ul {
 
 
 /* INDEX */
-
-/* .fondo {
-    background-image: url(../assets/fondo/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-fullview.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 200px;
-} */
-
 .main {
     background-image: url(../assets/fondo/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-fullview.jpg);
     background-attachment: fixed;
@@ -229,6 +217,59 @@ nav ul {
     padding: 10px;
 }
 
+/* secciones */
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.secciones div {
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+
+.secciones div:hover {
+    transform: scale(1.05, 1.05);
+    filter: grayscale(0);
+}
+
+.secciones div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: nyf;
+    font-size: 50px;
+    color: #ffff;
+    -webkit-text-stroke: 2px #000000;
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+}
+
+.personajes {
+    background-image: url(../assets/personajes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aldeas {
+    background-image: url(../assets/Aldeas.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tecnicasElementales {
+    background-image: url(../assets/Tecnicas\ elementales.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
 /* CONTACTO */
 
 .contacto-main {
@@ -296,7 +337,18 @@ nav ul {
     background-size: cover;
 }
 
-/* JUEGO 1 */
+/* JUEGOS */
+.celularDescargas {
+    background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: nyf;
+    font-size: 30px;
+    padding: 80px;
+    height: 100vh;
+}
+
 .game {
     background-color: #191919;
     padding: 30px;
@@ -354,70 +406,7 @@ nav ul {
     border-radius: 8px;
 }
 
-.celularDescargas {
-    background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    font-family: nyf;
-    font-size: 30px;
-    padding: 80px;
-    height: 100vh;
-}
-
-.secciones {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: auto;
-    gap: 30px;
-}
-
-.secciones div {
-    transition: 0.5s;
-    filter: grayscale(1);
-}
-
-.secciones div:hover {
-    transform: scale(1.05, 1.05);
-    filter: grayscale(0);
-}
-
-.secciones div p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: nyf;
-    font-size: 50px;
-    color: #ffff;
-    -webkit-text-stroke: 2px #000000;
-}
-
-.section {
-    width: 100%;
-    height: 500px;
-}
-
-.personajes {
-    background-image: url(../assets/personajes.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.aldeas {
-    background-image: url(../assets/Aldeas.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.tecnicasElementales {
-    background-image: url(../assets/Tecnicas\ elementales.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-/* CELULAR VERTICAL */
+/* Responsive o Media q */
 @media only screen and (min-width:320px) {
 
     /* INDEX */
@@ -497,7 +486,6 @@ nav ul {
 
 }
 
-/* CELULAR  HORIZONTAL*/
 @media only screen and (min-width:480px) {
 
     .resumen {
@@ -566,8 +554,6 @@ nav ul {
 
 }
 
-
-/* TABLET VERTICAL */
 @media only screen and (min-width:768px) {
 
     .cards {
@@ -610,7 +596,6 @@ nav ul {
 
 }
 
-/* TABLET HORIZONTAL */
 @media only screen and (min-width:1200px) {
 
     .resumen {
@@ -663,8 +648,7 @@ nav ul {
 }
 
 
-/* Aldeas */
-
+/* Bootstrap (Aldeas)*/
 .row {
     margin: 0;
 }
@@ -678,4 +662,13 @@ nav ul {
 .carouselTamaño img {
     object-fit: contain;
     height: 400px;
+}
+
+.bg-perso {
+    background-color: #a74b04;
+}
+
+.navPerso {
+    background-color: #DC5F00;
+    z-index: 3;
 }
