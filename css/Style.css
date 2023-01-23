@@ -41,7 +41,7 @@ a {
     text-decoration: none;
 }
 
-/* header */
+/* HEADER */
 header {
     background-color: #FF7000;
     font-family: nyf;
@@ -81,7 +81,7 @@ nav ul {
     gap: 25px;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
     background-image: url(../assets/Banner.jpg);
     background-position: center;
@@ -653,9 +653,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-.row>*{
-    padding: 0;
-}
 
 .carouselTamaño img {
     object-fit: contain;
@@ -674,7 +671,9 @@ nav ul {
     z-index: 3;
 }
 
-/* Bootstrap (Tecnicas Elementales) */
+.card{
+    height: 100%;
+}
 
 .card img{
     height: 300px;
